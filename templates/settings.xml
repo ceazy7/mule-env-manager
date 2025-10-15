@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+  <localRepository>C:/dev/artifacts</localRepository>
+  <servers>
+    <server>
+      <id>mulesoft-releases-ee</id>
+      <username>###ENTER YOUR CRED HERE###</username>
+      <password>###ENTER YOUR CRED HERE###</password>
+    </server>
+  </servers>
+  <proxies>
+    <proxy>
+      <id>my-proxy</id>
+      <active>false</active>
+      <protocol>http</protocol>
+      <host>192.168.1.1</host>
+      <port>8080</port>
+      <username>###PROXY_USERNAME_EINTRAGEN###</username>
+      <password>###PROXY_PASSWORT_EINTRAGEN###</password>
+    </proxy>
+  </proxies>
+  <profiles>
+    <profile>
+      <id>Mule</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>mulesoft-releases</id>
+          <name>MuleSoft Releases Repository</name>
+          <url>https://repository.mulesoft.org/releases/</url>
+          <layout>default</layout>
+        </repository>
+        <repository>
+          <id>mulesoft-anypoint-exchange-v2</id>
+          <name>Anypoint Exchange</name>
+          <url>https://maven.anypoint.mulesoft.com/api/v2/maven/</url>
+          <layout>default</layout>
+        </repository>
+        <repository>
+          <id>mulesoft-anypoint-exchange-v3</id>
+          <name>Anypoint Exchange</name>
+          <url>https://maven.eu1.anypoint.mulesoft.com/api/v3/maven/</url>
+          <layout>default</layout>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>mulesoft-releases</id>
+          <name>mulesoft release repository</name>
+          <layout>default</layout>
+          <url>https://repository.mulesoft.org/releases/</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>mulesoft-snapshots</id>
+          <name>mulesoft snapshots repository</name>
+          <layout>default</layout>
+          <url>https://repository.mulesoft.org/snapshots/</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+        </pluginRepository>
+        <pluginRepository>
+          <id>mule-releases</id>
+          <url>https://repository-master.mulesoft.org/nexus/content/repositories/releases</url>
+        </pluginRepository>
+        <pluginRepository>
+          <id>mule-snapshots</id>
+          <url>https://repository-master.mulesoft.org/nexus/content/repositories/snapshots</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+</settings>

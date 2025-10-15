@@ -1,0 +1,7 @@
+GitRepositoriesView.GitDirectories=
+GitRepositoriesView.GitDirectories.relative=
+core_defaultRepositoryDir=${workspace_loc}
+core_git_servers=
+core_preferredMergeStrategy=jgit-default-mergeStrategy
+core_ssh_default_agent=\\\\.\\pageant
+eclipse.preferences.version=1

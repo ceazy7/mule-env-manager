@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+mule_core_plugin_preference_maven_override_global_settings=true
+mule_core_plugin_preference_maven_override_global_settings_path=..\\maven\\conf\\settings.xml
+mule_core_plugin_preference_maven_override_user_settings=true
+mule_core_plugin_preference_maven_override_user_settings_path=..\\maven\\conf\\settings.xml
